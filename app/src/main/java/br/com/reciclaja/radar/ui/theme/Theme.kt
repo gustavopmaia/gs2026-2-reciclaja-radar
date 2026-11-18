@@ -21,9 +21,9 @@ import br.com.reciclaja.radar.domain.model.AlertLevel
 // ---- Tokens de cor (fonte única de verdade visual; nenhuma cor solta nas telas) ----
 object Palette {
     // Marca
-    val Green = Color(0xFF2E9E5B)
+    val Green = Color(0xFF1B6B3A)
     val GreenLight = Color(0xFF7FD8A0)
-    val Teal = Color(0xFF00897B)
+    val Teal = Color(0xFF00695C)
     val TealLight = Color(0xFF80CBC4)
     // Superfícies
     val SurfaceLight = Color(0xFFF7FAF6)
@@ -35,10 +35,10 @@ object Palette {
     val MutedLight = Color(0xFF5C6B60)
     val MutedDark = Color(0xFFA9B7AC)
     // Semânticas (texto/ícone sobre o card)
-    val NormalLight = Color(0xFF43A047)
-    val AttentionLight = Color(0xFFF2A900)
-    val CriticalLight = Color(0xFFE53935)
-    val InfoLight = Color(0xFF1E88E5)
+    val NormalLight = Color(0xFF2E7D32)
+    val AttentionLight = Color(0xFF8A5300)
+    val CriticalLight = Color(0xFFB3261E)
+    val InfoLight = Color(0xFF1565C0)
     val NormalDark = Color(0xFF81C784)
     val AttentionDark = Color(0xFFFFCA28)
     val CriticalDark = Color(0xFFEF9A9A)
@@ -85,7 +85,12 @@ private val RadarTypography = Typography(
 
 private val LightColors = lightColorScheme(
     primary = Palette.Green, onPrimary = Color.White,
+    primaryContainer = Color(0xFFC8EBD2), onPrimaryContainer = Color(0xFF00210E),
     secondary = Palette.Teal, onSecondary = Color.White,
+    secondaryContainer = Color(0xFFCDE8DF), onSecondaryContainer = Color(0xFF002019),
+    surfaceContainer = Color(0xFFEAF1EB), surfaceContainerLow = Color(0xFFF1F6F1),
+    surfaceContainerHigh = Color(0xFFE4ECE5), surfaceContainerLowest = Palette.CardLight,
+    outline = Color(0xFF6F7D72), outlineVariant = Color(0xFFBFCBC1),
     background = Palette.SurfaceLight, onBackground = Palette.InkLight,
     surface = Palette.CardLight, onSurface = Palette.InkLight,
     surfaceVariant = Color(0xFFE6EEE7), onSurfaceVariant = Palette.MutedLight,
@@ -94,7 +99,12 @@ private val LightColors = lightColorScheme(
 
 private val DarkColors = darkColorScheme(
     primary = Palette.GreenLight, onPrimary = Color(0xFF00391A),
+    primaryContainer = Color(0xFF1B5131), onPrimaryContainer = Color(0xFFC8EBD2),
     secondary = Palette.TealLight, onSecondary = Color(0xFF003731),
+    secondaryContainer = Color(0xFF244E45), onSecondaryContainer = Color(0xFFCDE8DF),
+    surfaceContainer = Color(0xFF1F2620), surfaceContainerLow = Color(0xFF181E19),
+    surfaceContainerHigh = Color(0xFF262E28), surfaceContainerLowest = Color(0xFF0B0F0C),
+    outline = Color(0xFF8A988D), outlineVariant = Color(0xFF3F4A42),
     background = Palette.SurfaceDark, onBackground = Palette.InkDark,
     surface = Palette.CardDark, onSurface = Palette.InkDark,
     surfaceVariant = Color(0xFF2A322C), onSurfaceVariant = Palette.MutedDark,

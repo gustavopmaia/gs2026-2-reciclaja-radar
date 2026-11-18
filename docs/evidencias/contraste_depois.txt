@@ -1,0 +1,13 @@
+OK    6.54:1  Texto do botão primário (claro)  (#FFFFFF sobre #1B6B3A)
+OK    5.13:1  Rótulo 'Normal' no card (claro)  (#2E7D32 sobre #FFFFFF)
+OK    5.75:1  Rótulo 'Informativo' no card (claro)  (#1565C0 sobre #FFFFFF)
+OK    6.33:1  Rótulo 'Atenção' no card (claro)  (#8A5300 sobre #FFFFFF)
+OK    6.54:1  Rótulo 'Crítico' no card (claro)  (#B3261E sobre #FFFFFF)
+OK    5.63:1  Texto secundário (claro)  (#5C6B60 sobre #FFFFFF)
+OK    8.15:1  Rótulo 'Normal' no card (escuro)  (#81C784 sobre #1B211C)
+OK    9.37:1  Rótulo 'Informativo' no card (escuro)  (#90CAF9 sobre #1B211C)
+OK   10.72:1  Rótulo 'Atenção' no card (escuro)  (#FFCA28 sobre #1B211C)
+OK    7.62:1  Rótulo 'Crítico' no card (escuro)  (#EF9A9A sobre #1B211C)
+OK    7.85:1  Texto secundário (escuro)  (#A9B7AC sobre #1B211C)
+
+11/11 pares atendem 4,5:1
