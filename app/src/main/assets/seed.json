@@ -1,0 +1,3264 @@
+{
+ "meta": {
+  "fonte": "Base sintética ReciclaJá (tools/gerar_dados_sinteticos.py, random.seed=42)",
+  "licenca": "CC0 1.0 — dados fictícios, livres para qualquer uso",
+  "origem": "SINTETICA",
+  "versao": "2026.11.1",
+  "inspiracao": "Formato inspirado em dados abertos de coleta seletiva e de precipitação (INMET); nenhum valor real copiado."
+ },
+ "territories": [
+  {
+   "id": "jardim-das-flores",
+   "name": "Jardim das Flores",
+   "type": "BAIRRO",
+   "lat": -23.5612,
+   "lon": -46.655
+  },
+  {
+   "id": "vila-esperanca",
+   "name": "Vila Esperança",
+   "type": "BAIRRO",
+   "lat": -23.548,
+   "lon": -46.602
+  },
+  {
+   "id": "centro",
+   "name": "Centro",
+   "type": "BAIRRO",
+   "lat": -23.5505,
+   "lon": -46.6333
+  },
+  {
+   "id": "sitio-boa-vista",
+   "name": "Sítio Boa Vista",
+   "type": "AREA_RURAL",
+   "lat": -23.7801,
+   "lon": -46.742
+  },
+  {
+   "id": "nova-aurora",
+   "name": "Nova Aurora",
+   "type": "AREA_RURAL",
+   "lat": -23.812,
+   "lon": -46.7011
+  },
+  {
+   "id": "parque-industrial",
+   "name": "Parque Industrial",
+   "type": "BAIRRO",
+   "lat": -23.601,
+   "lon": -46.59
+  }
+ ],
+ "indicators": [
+  {
+   "id": "ocupacao",
+   "theme": "RESIDUOS",
+   "name": "Ocupação dos contêineres",
+   "unit": "%",
+   "attention": 75.0,
+   "critical": 90.0,
+   "description": "Média diária de ocupação dos contêineres dos pontos críticos de coleta."
+  },
+  {
+   "id": "denuncias",
+   "theme": "RESIDUOS",
+   "name": "Descarte irregular reportado",
+   "unit": "ocorr./dia",
+   "attention": 6.0,
+   "critical": 10.0,
+   "description": "Ocorrências de descarte irregular registradas pela ouvidoria (agregadas por bairro)."
+  },
+  {
+   "id": "coleta",
+   "theme": "RESIDUOS",
+   "name": "Resíduos coletados",
+   "unit": "t/dia",
+   "attention": 18.0,
+   "critical": 22.0,
+   "description": "Toneladas coletadas por dia; limiares = capacidade da rota."
+  },
+  {
+   "id": "chuva",
+   "theme": "CLIMA",
+   "name": "Chuva acumulada",
+   "unit": "mm/24h",
+   "attention": 30.0,
+   "critical": 50.0,
+   "description": "Precipitação acumulada em 24 h (variável auxiliar: chuva atrasa a coleta)."
+  }
+ ],
+ "readings": [
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "ocupacao",
+   "dayOffset": -29,
+   "value": 59.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "ocupacao",
+   "dayOffset": -28,
+   "value": 59.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "ocupacao",
+   "dayOffset": -27,
+   "value": 58.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "ocupacao",
+   "dayOffset": -26,
+   "value": 57.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "ocupacao",
+   "dayOffset": -25,
+   "value": 63.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "ocupacao",
+   "dayOffset": -24,
+   "value": 63.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "ocupacao",
+   "dayOffset": -22,
+   "value": 63.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "ocupacao",
+   "dayOffset": -21,
+   "value": 63.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "ocupacao",
+   "dayOffset": -20,
+   "value": 66.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "ocupacao",
+   "dayOffset": -19,
+   "value": 67.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "ocupacao",
+   "dayOffset": -18,
+   "value": 67.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "ocupacao",
+   "dayOffset": -17,
+   "value": 70.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "ocupacao",
+   "dayOffset": -16,
+   "value": 71.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "ocupacao",
+   "dayOffset": -15,
+   "value": 71.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "ocupacao",
+   "dayOffset": -14,
+   "value": 73.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "ocupacao",
+   "dayOffset": -13,
+   "value": 70.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "ocupacao",
+   "dayOffset": -12,
+   "value": 72.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "ocupacao",
+   "dayOffset": -11,
+   "value": 76.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "ocupacao",
+   "dayOffset": -10,
+   "value": 77.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "ocupacao",
+   "dayOffset": -9,
+   "value": 75.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "ocupacao",
+   "dayOffset": -7,
+   "value": 78.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "ocupacao",
+   "dayOffset": -6,
+   "value": 80.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "ocupacao",
+   "dayOffset": -5,
+   "value": 80.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "ocupacao",
+   "dayOffset": -4,
+   "value": 84.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "ocupacao",
+   "dayOffset": -3,
+   "value": 83.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "ocupacao",
+   "dayOffset": -2,
+   "value": 85.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "ocupacao",
+   "dayOffset": -1,
+   "value": 83.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "ocupacao",
+   "dayOffset": 0,
+   "value": 84.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -29,
+   "value": 1.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -28,
+   "value": 4.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -27,
+   "value": 2.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -26,
+   "value": 1.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -25,
+   "value": 4.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -24,
+   "value": 3.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -23,
+   "value": 5.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -22,
+   "value": 3.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -21,
+   "value": 2.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -20,
+   "value": 5.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -19,
+   "value": 4.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -18,
+   "value": 5.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -17,
+   "value": 5.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -16,
+   "value": 4.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -15,
+   "value": 4.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -13,
+   "value": 4.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -12,
+   "value": 5.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -11,
+   "value": 4.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -10,
+   "value": 6.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -9,
+   "value": 5.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -8,
+   "value": 6.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -7,
+   "value": 5.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -6,
+   "value": 5.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -5,
+   "value": 7.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -4,
+   "value": 4.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -3,
+   "value": 6.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -2,
+   "value": 5.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -1,
+   "value": 6.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": 0,
+   "value": 6.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "coleta",
+   "dayOffset": -29,
+   "value": 15.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "coleta",
+   "dayOffset": -28,
+   "value": 14.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "coleta",
+   "dayOffset": -27,
+   "value": 13.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "coleta",
+   "dayOffset": -26,
+   "value": 14.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "coleta",
+   "dayOffset": -24,
+   "value": 14.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "coleta",
+   "dayOffset": -23,
+   "value": 14.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "coleta",
+   "dayOffset": -21,
+   "value": 14.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "coleta",
+   "dayOffset": -20,
+   "value": 15.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "coleta",
+   "dayOffset": -19,
+   "value": 15.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "coleta",
+   "dayOffset": -18,
+   "value": 15.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "coleta",
+   "dayOffset": -17,
+   "value": 14.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "coleta",
+   "dayOffset": -16,
+   "value": 15.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "coleta",
+   "dayOffset": -15,
+   "value": 16.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "coleta",
+   "dayOffset": -14,
+   "value": 14.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "coleta",
+   "dayOffset": -13,
+   "value": 15.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "coleta",
+   "dayOffset": -12,
+   "value": 16.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "coleta",
+   "dayOffset": -11,
+   "value": 15.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "coleta",
+   "dayOffset": -10,
+   "value": 16.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "coleta",
+   "dayOffset": -9,
+   "value": 16.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "coleta",
+   "dayOffset": -8,
+   "value": 16.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "coleta",
+   "dayOffset": -7,
+   "value": 16.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "coleta",
+   "dayOffset": -6,
+   "value": 16.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "coleta",
+   "dayOffset": -5,
+   "value": 17.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "coleta",
+   "dayOffset": -4,
+   "value": 16.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "coleta",
+   "dayOffset": -3,
+   "value": 17.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "coleta",
+   "dayOffset": -2,
+   "value": 17.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "coleta",
+   "dayOffset": -1,
+   "value": 16.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "coleta",
+   "dayOffset": 0,
+   "value": 17.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "chuva",
+   "dayOffset": -29,
+   "value": 6.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "chuva",
+   "dayOffset": -28,
+   "value": 5.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "chuva",
+   "dayOffset": -27,
+   "value": 11.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "chuva",
+   "dayOffset": -26,
+   "value": 12.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "chuva",
+   "dayOffset": -25,
+   "value": 11.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "chuva",
+   "dayOffset": -24,
+   "value": 14.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "chuva",
+   "dayOffset": -23,
+   "value": 11.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "chuva",
+   "dayOffset": -22,
+   "value": 12.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "chuva",
+   "dayOffset": -21,
+   "value": 16.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "chuva",
+   "dayOffset": -20,
+   "value": 10.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "chuva",
+   "dayOffset": -19,
+   "value": 19.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "chuva",
+   "dayOffset": -17,
+   "value": 22.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "chuva",
+   "dayOffset": -16,
+   "value": 12.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "chuva",
+   "dayOffset": -15,
+   "value": 22.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "chuva",
+   "dayOffset": -14,
+   "value": 24.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "chuva",
+   "dayOffset": -13,
+   "value": 25.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "chuva",
+   "dayOffset": -12,
+   "value": 24.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "chuva",
+   "dayOffset": -11,
+   "value": 24.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "chuva",
+   "dayOffset": -10,
+   "value": 21.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "chuva",
+   "dayOffset": -9,
+   "value": 29.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "chuva",
+   "dayOffset": -8,
+   "value": 26.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "chuva",
+   "dayOffset": -7,
+   "value": 25.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "chuva",
+   "dayOffset": -6,
+   "value": 36.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "chuva",
+   "dayOffset": -5,
+   "value": 29.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "chuva",
+   "dayOffset": -4,
+   "value": 29.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "chuva",
+   "dayOffset": -3,
+   "value": 32.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "chuva",
+   "dayOffset": -2,
+   "value": 30.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "chuva",
+   "dayOffset": -1,
+   "value": 34.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "chuva",
+   "dayOffset": 0,
+   "value": 37.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "ocupacao",
+   "dayOffset": -29,
+   "value": 69.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "ocupacao",
+   "dayOffset": -28,
+   "value": 69.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "ocupacao",
+   "dayOffset": -27,
+   "value": 65.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "ocupacao",
+   "dayOffset": -26,
+   "value": 65.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "ocupacao",
+   "dayOffset": -25,
+   "value": 68.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "ocupacao",
+   "dayOffset": -24,
+   "value": 67.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "ocupacao",
+   "dayOffset": -23,
+   "value": 65.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "ocupacao",
+   "dayOffset": -22,
+   "value": 69.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "ocupacao",
+   "dayOffset": -21,
+   "value": 68.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "ocupacao",
+   "dayOffset": -20,
+   "value": 67.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "ocupacao",
+   "dayOffset": -19,
+   "value": 69.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "ocupacao",
+   "dayOffset": -18,
+   "value": 69.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "ocupacao",
+   "dayOffset": -17,
+   "value": 73.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "ocupacao",
+   "dayOffset": -16,
+   "value": 68.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "ocupacao",
+   "dayOffset": -15,
+   "value": 72.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "ocupacao",
+   "dayOffset": -14,
+   "value": 73.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "ocupacao",
+   "dayOffset": -13,
+   "value": 73.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "ocupacao",
+   "dayOffset": -11,
+   "value": 71.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "ocupacao",
+   "dayOffset": -10,
+   "value": 69.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "ocupacao",
+   "dayOffset": -9,
+   "value": 68.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "ocupacao",
+   "dayOffset": -8,
+   "value": 74.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "ocupacao",
+   "dayOffset": -7,
+   "value": 74.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "ocupacao",
+   "dayOffset": -6,
+   "value": 72.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "ocupacao",
+   "dayOffset": -5,
+   "value": 71.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "ocupacao",
+   "dayOffset": -4,
+   "value": 69.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "ocupacao",
+   "dayOffset": -3,
+   "value": 74.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "ocupacao",
+   "dayOffset": -2,
+   "value": 72.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "ocupacao",
+   "dayOffset": 0,
+   "value": 75.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "denuncias",
+   "dayOffset": -29,
+   "value": 3.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "denuncias",
+   "dayOffset": -28,
+   "value": 5.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "denuncias",
+   "dayOffset": -27,
+   "value": 4.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "denuncias",
+   "dayOffset": -26,
+   "value": 4.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "denuncias",
+   "dayOffset": -25,
+   "value": 2.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "denuncias",
+   "dayOffset": -24,
+   "value": 3.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "denuncias",
+   "dayOffset": -23,
+   "value": 4.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "denuncias",
+   "dayOffset": -22,
+   "value": 4.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "denuncias",
+   "dayOffset": -21,
+   "value": 5.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "denuncias",
+   "dayOffset": -20,
+   "value": 3.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "denuncias",
+   "dayOffset": -19,
+   "value": 5.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "denuncias",
+   "dayOffset": -18,
+   "value": 5.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "denuncias",
+   "dayOffset": -17,
+   "value": 4.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "denuncias",
+   "dayOffset": -16,
+   "value": 4.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "denuncias",
+   "dayOffset": -15,
+   "value": 6.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "denuncias",
+   "dayOffset": -14,
+   "value": 4.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "denuncias",
+   "dayOffset": -12,
+   "value": 3.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "denuncias",
+   "dayOffset": -11,
+   "value": 6.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "denuncias",
+   "dayOffset": -10,
+   "value": 5.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "denuncias",
+   "dayOffset": -9,
+   "value": 4.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "denuncias",
+   "dayOffset": -8,
+   "value": 6.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "denuncias",
+   "dayOffset": -7,
+   "value": 4.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "denuncias",
+   "dayOffset": -6,
+   "value": 4.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "denuncias",
+   "dayOffset": -5,
+   "value": 5.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "denuncias",
+   "dayOffset": -4,
+   "value": 5.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "denuncias",
+   "dayOffset": -3,
+   "value": 5.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "denuncias",
+   "dayOffset": -2,
+   "value": 6.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "denuncias",
+   "dayOffset": -1,
+   "value": 5.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "denuncias",
+   "dayOffset": 0,
+   "value": 6.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "coleta",
+   "dayOffset": -29,
+   "value": 14.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "coleta",
+   "dayOffset": -28,
+   "value": 15.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "coleta",
+   "dayOffset": -27,
+   "value": 15.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "coleta",
+   "dayOffset": -26,
+   "value": 15.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "coleta",
+   "dayOffset": -25,
+   "value": 15.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "coleta",
+   "dayOffset": -24,
+   "value": 14.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "coleta",
+   "dayOffset": -23,
+   "value": 14.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "coleta",
+   "dayOffset": -22,
+   "value": 15.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "coleta",
+   "dayOffset": -20,
+   "value": 16.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "coleta",
+   "dayOffset": -19,
+   "value": 15.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "coleta",
+   "dayOffset": -18,
+   "value": 14.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "coleta",
+   "dayOffset": -17,
+   "value": 16.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "coleta",
+   "dayOffset": -16,
+   "value": 15.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "coleta",
+   "dayOffset": -15,
+   "value": 15.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "coleta",
+   "dayOffset": -14,
+   "value": 14.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "coleta",
+   "dayOffset": -13,
+   "value": 14.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "coleta",
+   "dayOffset": -12,
+   "value": 15.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "coleta",
+   "dayOffset": -11,
+   "value": 13.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "coleta",
+   "dayOffset": -10,
+   "value": 16.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "coleta",
+   "dayOffset": -9,
+   "value": 15.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "coleta",
+   "dayOffset": -8,
+   "value": 15.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "coleta",
+   "dayOffset": -6,
+   "value": 14.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "coleta",
+   "dayOffset": -5,
+   "value": 15.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "coleta",
+   "dayOffset": -4,
+   "value": 15.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "coleta",
+   "dayOffset": -3,
+   "value": 15.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "coleta",
+   "dayOffset": -2,
+   "value": 15.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "coleta",
+   "dayOffset": -1,
+   "value": 15.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "coleta",
+   "dayOffset": 0,
+   "value": 15.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "chuva",
+   "dayOffset": -29,
+   "value": 4.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "chuva",
+   "dayOffset": -28,
+   "value": 5.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "chuva",
+   "dayOffset": -27,
+   "value": 4.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "chuva",
+   "dayOffset": -25,
+   "value": 1.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "chuva",
+   "dayOffset": -24,
+   "value": 8.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "chuva",
+   "dayOffset": -23,
+   "value": 6.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "chuva",
+   "dayOffset": -22,
+   "value": 6.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "chuva",
+   "dayOffset": -21,
+   "value": 8.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "chuva",
+   "dayOffset": -19,
+   "value": 13.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "chuva",
+   "dayOffset": -18,
+   "value": 11.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "chuva",
+   "dayOffset": -17,
+   "value": 11.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "chuva",
+   "dayOffset": -16,
+   "value": 8.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "chuva",
+   "dayOffset": -15,
+   "value": 10.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "chuva",
+   "dayOffset": -14,
+   "value": 5.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "chuva",
+   "dayOffset": -13,
+   "value": 12.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "chuva",
+   "dayOffset": -12,
+   "value": 5.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "chuva",
+   "dayOffset": -11,
+   "value": 7.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "chuva",
+   "dayOffset": -10,
+   "value": 11.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "chuva",
+   "dayOffset": -9,
+   "value": 8.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "chuva",
+   "dayOffset": -8,
+   "value": 16.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "chuva",
+   "dayOffset": -7,
+   "value": 9.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "chuva",
+   "dayOffset": -6,
+   "value": 13.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "chuva",
+   "dayOffset": -5,
+   "value": 17.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "chuva",
+   "dayOffset": -4,
+   "value": 11.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "chuva",
+   "dayOffset": -3,
+   "value": 12.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "chuva",
+   "dayOffset": -2,
+   "value": 13.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "chuva",
+   "dayOffset": -1,
+   "value": 17.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "vila-esperanca",
+   "indicatorId": "chuva",
+   "dayOffset": 0,
+   "value": 15.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "ocupacao",
+   "dayOffset": -29,
+   "value": 51.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "ocupacao",
+   "dayOffset": -28,
+   "value": 45.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "ocupacao",
+   "dayOffset": -27,
+   "value": 49.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "ocupacao",
+   "dayOffset": -26,
+   "value": 43.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "ocupacao",
+   "dayOffset": -25,
+   "value": 50.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "ocupacao",
+   "dayOffset": -24,
+   "value": 50.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "ocupacao",
+   "dayOffset": -23,
+   "value": 45.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "ocupacao",
+   "dayOffset": -21,
+   "value": 48.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "ocupacao",
+   "dayOffset": -20,
+   "value": 43.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "ocupacao",
+   "dayOffset": -19,
+   "value": 48.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "ocupacao",
+   "dayOffset": -18,
+   "value": 45.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "ocupacao",
+   "dayOffset": -17,
+   "value": 49.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "ocupacao",
+   "dayOffset": -15,
+   "value": 51.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "ocupacao",
+   "dayOffset": -14,
+   "value": 47.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "ocupacao",
+   "dayOffset": -13,
+   "value": 49.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "ocupacao",
+   "dayOffset": -12,
+   "value": 48.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "ocupacao",
+   "dayOffset": -11,
+   "value": 48.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "ocupacao",
+   "dayOffset": -10,
+   "value": 52.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "ocupacao",
+   "dayOffset": -9,
+   "value": 49.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "ocupacao",
+   "dayOffset": -8,
+   "value": 51.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "ocupacao",
+   "dayOffset": -7,
+   "value": 49.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "ocupacao",
+   "dayOffset": -6,
+   "value": 49.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "ocupacao",
+   "dayOffset": -5,
+   "value": 46.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "ocupacao",
+   "dayOffset": -4,
+   "value": 49.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "ocupacao",
+   "dayOffset": -2,
+   "value": 50.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "ocupacao",
+   "dayOffset": -1,
+   "value": 47.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "ocupacao",
+   "dayOffset": 0,
+   "value": 52.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "denuncias",
+   "dayOffset": -29,
+   "value": 2.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "denuncias",
+   "dayOffset": -28,
+   "value": 0.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "denuncias",
+   "dayOffset": -26,
+   "value": 2.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "denuncias",
+   "dayOffset": -25,
+   "value": 2.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "denuncias",
+   "dayOffset": -24,
+   "value": 1.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "denuncias",
+   "dayOffset": -23,
+   "value": 1.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "denuncias",
+   "dayOffset": -22,
+   "value": 2.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "denuncias",
+   "dayOffset": -21,
+   "value": 1.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "denuncias",
+   "dayOffset": -20,
+   "value": 2.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "denuncias",
+   "dayOffset": -19,
+   "value": 2.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "denuncias",
+   "dayOffset": -18,
+   "value": 2.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "denuncias",
+   "dayOffset": -17,
+   "value": 1.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "denuncias",
+   "dayOffset": -16,
+   "value": 1.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "denuncias",
+   "dayOffset": -15,
+   "value": 1.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "denuncias",
+   "dayOffset": -14,
+   "value": 2.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "denuncias",
+   "dayOffset": -13,
+   "value": 1.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "denuncias",
+   "dayOffset": -12,
+   "value": 2.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "denuncias",
+   "dayOffset": -11,
+   "value": 1.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "denuncias",
+   "dayOffset": -10,
+   "value": 1.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "denuncias",
+   "dayOffset": -9,
+   "value": 2.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "denuncias",
+   "dayOffset": -8,
+   "value": 3.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "denuncias",
+   "dayOffset": -7,
+   "value": 2.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "denuncias",
+   "dayOffset": -6,
+   "value": 1.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "denuncias",
+   "dayOffset": -5,
+   "value": 1.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "denuncias",
+   "dayOffset": -4,
+   "value": 1.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "denuncias",
+   "dayOffset": -3,
+   "value": 3.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "denuncias",
+   "dayOffset": -2,
+   "value": 1.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "denuncias",
+   "dayOffset": -1,
+   "value": 2.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "denuncias",
+   "dayOffset": 0,
+   "value": 2.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "coleta",
+   "dayOffset": -29,
+   "value": 11.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "coleta",
+   "dayOffset": -28,
+   "value": 11.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "coleta",
+   "dayOffset": -27,
+   "value": 12.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "coleta",
+   "dayOffset": -25,
+   "value": 12.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "coleta",
+   "dayOffset": -24,
+   "value": 12.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "coleta",
+   "dayOffset": -23,
+   "value": 12.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "coleta",
+   "dayOffset": -22,
+   "value": 11.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "coleta",
+   "dayOffset": -20,
+   "value": 12.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "coleta",
+   "dayOffset": -19,
+   "value": 12.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "coleta",
+   "dayOffset": -18,
+   "value": 11.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "coleta",
+   "dayOffset": -17,
+   "value": 11.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "coleta",
+   "dayOffset": -16,
+   "value": 12.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "coleta",
+   "dayOffset": -15,
+   "value": 12.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "coleta",
+   "dayOffset": -14,
+   "value": 11.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "coleta",
+   "dayOffset": -13,
+   "value": 11.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "coleta",
+   "dayOffset": -12,
+   "value": 12.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "coleta",
+   "dayOffset": -11,
+   "value": 11.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "coleta",
+   "dayOffset": -10,
+   "value": 12.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "coleta",
+   "dayOffset": -9,
+   "value": 12.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "coleta",
+   "dayOffset": -8,
+   "value": 11.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "coleta",
+   "dayOffset": -7,
+   "value": 11.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "coleta",
+   "dayOffset": -6,
+   "value": 11.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "coleta",
+   "dayOffset": -5,
+   "value": 12.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "coleta",
+   "dayOffset": -4,
+   "value": 11.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "coleta",
+   "dayOffset": -3,
+   "value": 12.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "coleta",
+   "dayOffset": -2,
+   "value": 12.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "coleta",
+   "dayOffset": -1,
+   "value": 12.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "coleta",
+   "dayOffset": 0,
+   "value": 12.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "chuva",
+   "dayOffset": -29,
+   "value": 4.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "chuva",
+   "dayOffset": -28,
+   "value": 7.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "chuva",
+   "dayOffset": -27,
+   "value": 2.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "chuva",
+   "dayOffset": -26,
+   "value": 2.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "chuva",
+   "dayOffset": -25,
+   "value": 5.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "chuva",
+   "dayOffset": -23,
+   "value": 0.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "chuva",
+   "dayOffset": -22,
+   "value": 5.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "chuva",
+   "dayOffset": -21,
+   "value": 4.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "chuva",
+   "dayOffset": -20,
+   "value": 4.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "chuva",
+   "dayOffset": -19,
+   "value": 2.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "chuva",
+   "dayOffset": -18,
+   "value": 12.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "chuva",
+   "dayOffset": -17,
+   "value": 1.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "chuva",
+   "dayOffset": -16,
+   "value": 2.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "chuva",
+   "dayOffset": -15,
+   "value": 2.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "chuva",
+   "dayOffset": -14,
+   "value": 5.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "chuva",
+   "dayOffset": -13,
+   "value": 3.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "chuva",
+   "dayOffset": -12,
+   "value": 8.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "chuva",
+   "dayOffset": -11,
+   "value": 6.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "chuva",
+   "dayOffset": -10,
+   "value": 4.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "chuva",
+   "dayOffset": -9,
+   "value": 5.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "chuva",
+   "dayOffset": -8,
+   "value": 6.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "chuva",
+   "dayOffset": -6,
+   "value": 3.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "chuva",
+   "dayOffset": -5,
+   "value": 3.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "chuva",
+   "dayOffset": -4,
+   "value": 4.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "chuva",
+   "dayOffset": -3,
+   "value": 2.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "chuva",
+   "dayOffset": -2,
+   "value": 5.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "chuva",
+   "dayOffset": -1,
+   "value": 1.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "centro",
+   "indicatorId": "chuva",
+   "dayOffset": 0,
+   "value": 2.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "ocupacao",
+   "dayOffset": -29,
+   "value": 56.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "ocupacao",
+   "dayOffset": -28,
+   "value": 55.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "ocupacao",
+   "dayOffset": -27,
+   "value": 54.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "ocupacao",
+   "dayOffset": -26,
+   "value": 55.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "ocupacao",
+   "dayOffset": -25,
+   "value": 53.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "ocupacao",
+   "dayOffset": -24,
+   "value": 54.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "ocupacao",
+   "dayOffset": -23,
+   "value": 53.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "ocupacao",
+   "dayOffset": -22,
+   "value": 55.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "ocupacao",
+   "dayOffset": -20,
+   "value": 56.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "ocupacao",
+   "dayOffset": -19,
+   "value": 57.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "ocupacao",
+   "dayOffset": -18,
+   "value": 58.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "ocupacao",
+   "dayOffset": -17,
+   "value": 53.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "ocupacao",
+   "dayOffset": -16,
+   "value": 55.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "ocupacao",
+   "dayOffset": -15,
+   "value": 57.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "ocupacao",
+   "dayOffset": -14,
+   "value": 58.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "ocupacao",
+   "dayOffset": -13,
+   "value": 55.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "ocupacao",
+   "dayOffset": -12,
+   "value": 54.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "ocupacao",
+   "dayOffset": -11,
+   "value": 57.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "ocupacao",
+   "dayOffset": -10,
+   "value": 57.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "ocupacao",
+   "dayOffset": -9,
+   "value": 57.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "ocupacao",
+   "dayOffset": -8,
+   "value": 61.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "ocupacao",
+   "dayOffset": -7,
+   "value": 58.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "ocupacao",
+   "dayOffset": -6,
+   "value": 58.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "ocupacao",
+   "dayOffset": -5,
+   "value": 57.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "denuncias",
+   "dayOffset": -29,
+   "value": 0.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "denuncias",
+   "dayOffset": -28,
+   "value": 1.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "denuncias",
+   "dayOffset": -27,
+   "value": 0.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "denuncias",
+   "dayOffset": -26,
+   "value": 0.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "denuncias",
+   "dayOffset": -25,
+   "value": 0.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "denuncias",
+   "dayOffset": -24,
+   "value": 0.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "denuncias",
+   "dayOffset": -23,
+   "value": 1.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "denuncias",
+   "dayOffset": -22,
+   "value": 1.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "denuncias",
+   "dayOffset": -21,
+   "value": 1.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "denuncias",
+   "dayOffset": -20,
+   "value": 0.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "denuncias",
+   "dayOffset": -19,
+   "value": 0.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "denuncias",
+   "dayOffset": -18,
+   "value": 1.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "denuncias",
+   "dayOffset": -17,
+   "value": 1.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "denuncias",
+   "dayOffset": -16,
+   "value": 2.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "denuncias",
+   "dayOffset": -15,
+   "value": 1.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "denuncias",
+   "dayOffset": -14,
+   "value": 1.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "denuncias",
+   "dayOffset": -13,
+   "value": 1.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "denuncias",
+   "dayOffset": -12,
+   "value": 0.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "denuncias",
+   "dayOffset": -11,
+   "value": 1.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "denuncias",
+   "dayOffset": -10,
+   "value": 1.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "denuncias",
+   "dayOffset": -9,
+   "value": 1.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "denuncias",
+   "dayOffset": -8,
+   "value": 0.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "denuncias",
+   "dayOffset": -7,
+   "value": 1.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "denuncias",
+   "dayOffset": -6,
+   "value": 1.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "denuncias",
+   "dayOffset": -5,
+   "value": 0.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "coleta",
+   "dayOffset": -29,
+   "value": 4.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "coleta",
+   "dayOffset": -28,
+   "value": 3.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "coleta",
+   "dayOffset": -27,
+   "value": 4.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "coleta",
+   "dayOffset": -26,
+   "value": 4.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "coleta",
+   "dayOffset": -25,
+   "value": 3.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "coleta",
+   "dayOffset": -24,
+   "value": 4.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "coleta",
+   "dayOffset": -23,
+   "value": 3.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "coleta",
+   "dayOffset": -22,
+   "value": 4.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "coleta",
+   "dayOffset": -21,
+   "value": 4.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "coleta",
+   "dayOffset": -19,
+   "value": 4.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "coleta",
+   "dayOffset": -18,
+   "value": 4.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "coleta",
+   "dayOffset": -17,
+   "value": 3.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "coleta",
+   "dayOffset": -16,
+   "value": 4.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "coleta",
+   "dayOffset": -14,
+   "value": 3.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "coleta",
+   "dayOffset": -13,
+   "value": 4.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "coleta",
+   "dayOffset": -12,
+   "value": 3.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "coleta",
+   "dayOffset": -11,
+   "value": 3.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "coleta",
+   "dayOffset": -10,
+   "value": 4.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "coleta",
+   "dayOffset": -9,
+   "value": 4.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "coleta",
+   "dayOffset": -8,
+   "value": 4.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "coleta",
+   "dayOffset": -7,
+   "value": 3.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "coleta",
+   "dayOffset": -6,
+   "value": 3.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "coleta",
+   "dayOffset": -5,
+   "value": 4.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "chuva",
+   "dayOffset": -29,
+   "value": 4.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "chuva",
+   "dayOffset": -28,
+   "value": 7.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "chuva",
+   "dayOffset": -26,
+   "value": 0.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "chuva",
+   "dayOffset": -25,
+   "value": 16.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "chuva",
+   "dayOffset": -24,
+   "value": 2.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "chuva",
+   "dayOffset": -23,
+   "value": 10.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "chuva",
+   "dayOffset": -22,
+   "value": 9.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "chuva",
+   "dayOffset": -21,
+   "value": 4.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "chuva",
+   "dayOffset": -19,
+   "value": 0.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "chuva",
+   "dayOffset": -18,
+   "value": 5.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "chuva",
+   "dayOffset": -17,
+   "value": 8.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "chuva",
+   "dayOffset": -16,
+   "value": 7.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "chuva",
+   "dayOffset": -15,
+   "value": 5.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "chuva",
+   "dayOffset": -14,
+   "value": 5.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "chuva",
+   "dayOffset": -13,
+   "value": 5.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "chuva",
+   "dayOffset": -12,
+   "value": 4.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "chuva",
+   "dayOffset": -11,
+   "value": 7.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "chuva",
+   "dayOffset": -9,
+   "value": 10.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "chuva",
+   "dayOffset": -8,
+   "value": 4.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "chuva",
+   "dayOffset": -7,
+   "value": 4.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "chuva",
+   "dayOffset": -6,
+   "value": 10.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "sitio-boa-vista",
+   "indicatorId": "chuva",
+   "dayOffset": -5,
+   "value": 7.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "parque-industrial",
+   "indicatorId": "ocupacao",
+   "dayOffset": -4,
+   "value": 75.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "parque-industrial",
+   "indicatorId": "ocupacao",
+   "dayOffset": -3,
+   "value": 70.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "parque-industrial",
+   "indicatorId": "ocupacao",
+   "dayOffset": -2,
+   "value": 73.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "parque-industrial",
+   "indicatorId": "ocupacao",
+   "dayOffset": -1,
+   "value": 74.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "parque-industrial",
+   "indicatorId": "ocupacao",
+   "dayOffset": 0,
+   "value": 73.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "parque-industrial",
+   "indicatorId": "denuncias",
+   "dayOffset": -4,
+   "value": 1.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "parque-industrial",
+   "indicatorId": "denuncias",
+   "dayOffset": -3,
+   "value": 2.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "parque-industrial",
+   "indicatorId": "denuncias",
+   "dayOffset": -2,
+   "value": 2.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "parque-industrial",
+   "indicatorId": "denuncias",
+   "dayOffset": -1,
+   "value": 2.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "parque-industrial",
+   "indicatorId": "denuncias",
+   "dayOffset": 0,
+   "value": 1.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "parque-industrial",
+   "indicatorId": "coleta",
+   "dayOffset": -4,
+   "value": 20.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "parque-industrial",
+   "indicatorId": "coleta",
+   "dayOffset": -3,
+   "value": 18.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "parque-industrial",
+   "indicatorId": "coleta",
+   "dayOffset": -2,
+   "value": 18.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "parque-industrial",
+   "indicatorId": "coleta",
+   "dayOffset": -1,
+   "value": 18.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "parque-industrial",
+   "indicatorId": "coleta",
+   "dayOffset": 0,
+   "value": 17.7,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "parque-industrial",
+   "indicatorId": "chuva",
+   "dayOffset": -4,
+   "value": 4.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "parque-industrial",
+   "indicatorId": "chuva",
+   "dayOffset": -3,
+   "value": 3.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "parque-industrial",
+   "indicatorId": "chuva",
+   "dayOffset": -2,
+   "value": 4.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "parque-industrial",
+   "indicatorId": "chuva",
+   "dayOffset": -1,
+   "value": 4.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "parque-industrial",
+   "indicatorId": "chuva",
+   "dayOffset": 0,
+   "value": 5.5,
+   "origin": "SINTETICA"
+  }
+ ]
+}
