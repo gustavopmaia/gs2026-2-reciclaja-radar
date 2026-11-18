@@ -3,6 +3,8 @@ package br.com.reciclaja.radar.ui.screens
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -50,6 +52,7 @@ import br.com.reciclaja.radar.ui.relativeAge
 import br.com.reciclaja.radar.ui.theme.LocalStatusColors
 import br.com.reciclaja.radar.ui.theme.Spacing
 
+@OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun DashboardScreen(
     vm: DashboardViewModel,
@@ -77,9 +80,9 @@ fun DashboardScreen(
             TerritorySelector(territories, selected ?: territories.firstOrNull()?.id, onSelect = vm::select)
         }
         full {
-            Row(verticalAlignment = Alignment.CenterVertically) {
+            // FlowRow: com fonte a 200% o texto quebra para a linha de baixo em vez de espremer.
+            FlowRow(horizontalArrangement = Arrangement.spacedBy(Spacing.sm), verticalArrangement = Arrangement.spacedBy(Spacing.xs)) {
                 OriginTag("Dados sintéticos (fictícios)")
-                Spacer(Modifier.width(Spacing.sm))
                 Text(
                     lastLoad?.let { "Base carregada ${it.relativeAge(vm.now())}" } ?: "",
                     style = MaterialTheme.typography.labelMedium,

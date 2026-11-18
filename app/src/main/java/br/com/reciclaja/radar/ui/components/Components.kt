@@ -214,7 +214,7 @@ enum class StateKind { LOADING, EMPTY, ERROR, STALE }
 
 /** Padroniza carregando, vazio, erro e aviso de dados desatualizados. */
 @Composable
-fun StateView(kind: StateKind, message: String, modifier: Modifier = Modifier, onRetry: (() -> Unit)? = null) {
+fun StateView(kind: StateKind, message: String, modifier: Modifier = Modifier, title: String? = null, onRetry: (() -> Unit)? = null) {
     val status = LocalStatusColors.current
     val (icon, color) = when (kind) {
         StateKind.LOADING -> null to MaterialTheme.colorScheme.primary
@@ -233,7 +233,7 @@ fun StateView(kind: StateKind, message: String, modifier: Modifier = Modifier, o
             Spacer(Modifier.width(Spacing.md))
             Column(Modifier.weight(1f)) {
                 Text(
-                    when (kind) {
+                    title ?: when (kind) {
                         StateKind.LOADING -> "Carregando"
                         StateKind.EMPTY -> "Sem dados"
                         StateKind.ERROR -> "Erro"

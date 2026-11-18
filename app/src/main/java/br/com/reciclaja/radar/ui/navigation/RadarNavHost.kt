@@ -55,7 +55,7 @@ private data class Tab(val route: String, val label: String, val icon: ImageVect
 private val tabs = listOf(
     Tab(Routes.DASHBOARD, "Painel", Icons.Filled.Home),
     Tab(Routes.HISTORY, "Histórico", Icons.AutoMirrored.Filled.List),
-    Tab(Routes.SETTINGS, "Configurações", Icons.Filled.Settings),
+    Tab(Routes.SETTINGS, "Ajustes", Icons.Filled.Settings),
 )
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -106,7 +106,7 @@ fun RadarNavHost(container: AppContainer, deepLink: Pair<String, String>?, onDee
                             }
                         },
                         icon = { Icon(tab.icon, contentDescription = null) },
-                        label = { Text(tab.label) },
+                        label = { Text(tab.label, maxLines = 1) },
                     )
                 }
             }

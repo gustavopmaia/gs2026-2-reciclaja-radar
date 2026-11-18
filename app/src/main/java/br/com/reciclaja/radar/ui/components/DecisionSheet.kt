@@ -36,6 +36,7 @@ fun DecisionSheet(
     alert: Alert,
     error: String?,
     onDismiss: () -> Unit,
+    onEdited: () -> Unit,
     onConfirm: (DecisionAction, String, String) -> Unit,
 ) {
     var action by rememberSaveable { mutableStateOf(DecisionAction.ACATAR) }
@@ -61,18 +62,18 @@ fun DecisionSheet(
                 DecisionAction.entries.forEachIndexed { i, a ->
                     SegmentedButton(
                         selected = action == a,
-                        onClick = { action = a },
+                        onClick = { action = a; onEdited() },
                         shape = SegmentedButtonDefaults.itemShape(i, DecisionAction.entries.size),
                         modifier = Modifier.heightIn(min = 48.dp),
                     ) { Text(a.label) }
                 }
             }
             OutlinedTextField(
-                value = responsible, onValueChange = { responsible = it.take(80) },
+                value = responsible, onValueChange = { responsible = it.take(80); onEdited() },
                 label = { Text("Responsável") }, singleLine = true, modifier = Modifier.fillMaxWidth(),
             )
             OutlinedTextField(
-                value = note, onValueChange = { note = it.take(500) },
+                value = note, onValueChange = { note = it.take(500); onEdited() },
                 label = { Text(if (action == DecisionAction.ACATAR) "Observação (opcional)" else "Motivo (obrigatório)") },
                 minLines = 2, modifier = Modifier.fillMaxWidth(),
             )

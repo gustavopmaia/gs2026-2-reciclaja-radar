@@ -19,3 +19,6 @@ local.properties
 !/video/video_mudo.mp4
 /video/audio.*
 /video/clips/
+
+# graft's local graph cache — regenerable, not committed (run `graft build`).
+/graft/

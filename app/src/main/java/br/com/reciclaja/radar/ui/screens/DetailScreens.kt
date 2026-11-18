@@ -106,7 +106,13 @@ fun IndicatorDetailScreen(vm: DetailViewModel, padding: PaddingValues, onAlert: 
                     item { AlertCard(e.alert, onClick = { onAlert(ov.territory.id, st.indicator.id) }) }
                     item { JustificationPanel(e.alert.justification, e.alert.confidenceLabel, e.alert.confidence) }
                 }
-                else -> item { StateView(if (e is Evaluation.StaleData) StateKind.STALE else StateKind.EMPTY, noAlertReason(e, st)) }
+                else -> item {
+                    StateView(
+                        if (e is Evaluation.StaleData) StateKind.STALE else StateKind.EMPTY,
+                        noAlertReason(e, st),
+                        title = when (e) { Evaluation.Normal -> "Sem alerta"; is Evaluation.InsufficientData -> "Dados insuficientes"; else -> null },
+                    )
+                }
             }
             item { SectionTitle("Últimas leituras") }
             item { ReadingsTable(st) }
@@ -206,6 +212,7 @@ fun AlertDetailScreen(vm: DetailViewModel, padding: PaddingValues, snackbar: Sna
             alert = alert,
             error = error,
             onDismiss = { sheetOpen = false },
+            onEdited = vm::clearError,
             onConfirm = { action, who, note -> vm.decide(alert, action, who, note) },
         )
     }
