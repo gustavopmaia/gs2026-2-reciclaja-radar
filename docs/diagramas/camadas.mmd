@@ -1,0 +1,27 @@
+flowchart TB
+  subgraph UI["🖼️ Interface — ui/ (Jetpack Compose)"]
+    direction LR
+    S["5 telas<br/>Painel · Indicador · Alerta<br/>Histórico · Configurações"]
+    C["Componentes reutilizáveis<br/>KpiCard · TrendChart · AlertCard<br/>JustificationPanel · TerritorySelector<br/>StateView · DecisionSheet"]
+    T["Tema<br/>tokens de cor, tipografia,<br/>forma, espaçamento"]
+  end
+  subgraph VM["🔄 Estado — ViewModel + StateFlow"]
+    direction LR
+    V["DashboardVM · DetailVM<br/>HistoryVM · SettingsVM"]
+    US["UiState selado<br/>Loading · Success · Stale<br/>Empty · Error"]
+  end
+  subgraph DOM["🧠 Domínio — Kotlin puro, sem Android"]
+    direction LR
+    E["AlertEngine<br/>média móvel + regressão"]
+    U["Casos de uso<br/>BuildTerritoryOverview<br/>RecordDecision<br/>NotifyCriticalAlerts"]
+    P["Contratos (portas)<br/>RadarRepository<br/>AlertNotifier<br/>NotifiedAlertsStore"]
+  end
+  subgraph DATA["💾 Dados e nativo — data/ · platform/"]
+    direction LR
+    RR["RoomRadarRepository<br/>+ RadarDao / Room"]
+    SP["SeedParser<br/>assets/seed.json"]
+    PR["AppPreferences"]
+    AN["AndroidAlertNotifier<br/>POST_NOTIFICATIONS"]
+  end
+  UI --> VM --> DOM
+  DATA -. "implementa os contratos" .-> DOM

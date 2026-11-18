@@ -1,0 +1,13 @@
+flowchart LR
+  G["👤 Gestor territorial"] -- "consulta, decide e registra" --> APP
+  M["👤 Morador / liderança"] -- "consulta risco e justificativa" --> APP
+  A["🛠️ Administrador"] -- "limiares, temas, recarga" --> APP
+  subgraph APP["📱 ReciclaJá Radar (Android)"]
+    UI["Telas Compose"] --> VM["ViewModels"] --> D["Domínio: motor de previsão e casos de uso"]
+    D --> R["Repositório (contrato)"]
+  end
+  R -- "lê e grava" --> DB[("Room / SQLite<br/>leituras, decisões")]
+  S["📄 seed.json (assets)<br/>base sintética CC0"] -- "carga inicial em transação" --> DB
+  GEN["🐍 tools/gerar_dados_sinteticos.py"] -- "gera (seed 42)" --> S
+  D -- "alerta crítico" --> N["🔔 Notificação local<br/>(POST_NOTIFICATIONS)"]
+  N -- "toque abre o alerta" --> UI

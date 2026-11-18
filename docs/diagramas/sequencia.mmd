@@ -1,0 +1,26 @@
+sequenceDiagram
+  actor G as Gestor
+  participant UI as Painel (Compose)
+  participant VM as DashboardViewModel
+  participant UC as BuildTerritoryOverview + AlertEngine
+  participant R as RoomRadarRepository
+  participant N as NotifyCriticalAlerts / AndroidAlertNotifier
+  G->>UI: abre o app e escolhe "Jardim das Flores"
+  UI->>VM: select(territoryId)
+  VM->>R: readings(territoryId) (Flow do Room)
+  R-->>VM: 114 leituras (30 dias, 4 indicadores)
+  VM->>UC: overview(território, indicadores, leituras, agora)
+  UC-->>VM: Alerta CRÍTICO (96,1%, confiança 86%, justificativa)
+  VM->>N: notificar(alertas críticos)
+  N-->>VM: canNotify() = false → 0 enviadas (chave NÃO marcada)
+  VM-->>UI: UiState.Success
+  UI-->>G: banner "Notificações desativadas" (plano B) + AlertCard Crítico
+  G->>UI: toca "Ativar notificações" → nega 2x
+  UI-->>G: status "Negada permanentemente" → botão "Abrir configurações do sistema"
+  G->>UI: ativa nas configurações e volta (ON_RESUME)
+  UI->>VM: onPermissionMaybeChanged()
+  VM->>N: notificar → 1 enviada, chave marcada (não duplica)
+  G->>UI: toca no alerta → lê justificativa → Registrar decisão (Acatar)
+  UI->>VM: decide(alerta, ACATAR, "Marina Lopes", obs)
+  VM->>R: saveDecision(...) (Room)
+  VM-->>UI: "Decisão registrada no histórico."
