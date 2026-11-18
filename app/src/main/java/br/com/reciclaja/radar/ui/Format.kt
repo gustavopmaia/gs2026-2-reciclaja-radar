@@ -1,5 +1,6 @@
 package br.com.reciclaja.radar.ui
 
+import br.com.reciclaja.radar.domain.model.Evaluation
 import java.time.Instant
 import java.time.ZoneId
 import java.time.format.DateTimeFormatter
@@ -21,4 +22,12 @@ fun Long.relativeAge(now: Long): String {
         min < 60 * 24 -> "há ${min / 60} h"
         else -> "há ${min / (60 * 24)} dias"
     }
+}
+
+/** Rótulo para quando não há avaliação possível (null = avaliado). */
+fun Evaluation.unavailableLabel(): String? = when (this) {
+    is Evaluation.StaleData -> "Desatualizado"
+    is Evaluation.InsufficientData -> "Dados insuficientes"
+    Evaluation.NoData -> "Sem dados"
+    else -> null
 }

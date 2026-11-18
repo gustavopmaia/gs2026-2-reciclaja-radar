@@ -75,7 +75,7 @@ fun TrendChart(
                     val allT = history.map { it.timestamp } + forecast.map { it.first }
                     val allV = history.map { it.value } + forecast.map { it.second } + listOf(attention, critical)
                     val tMin = allT.min().toFloat(); val tMax = allT.max().toFloat()
-                    val vMin = min(0.0, allV.min()).toFloat(); val vMax = (allV.max() * 1.08).toFloat()
+                    val vMin = max(0.0, allV.min() * 0.85).toFloat(); val vMax = (allV.max() * 1.05).toFloat()
                     val left = 44.dp.toPx(); val bottom = size.height - 20.dp.toPx(); val top = 6.dp.toPx(); val right = size.width - 4.dp.toPx()
                     fun x(t: Long) = left + (t - tMin) / max(1f, tMax - tMin) * (right - left)
                     fun y(v: Double) = bottom - (v.toFloat() - vMin) / max(0.0001f, vMax - vMin) * (bottom - top)

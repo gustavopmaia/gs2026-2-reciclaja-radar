@@ -93,63 +93,63 @@
    "territoryId": "jardim-das-flores",
    "indicatorId": "ocupacao",
    "dayOffset": -29,
-   "value": 59.6,
+   "value": 56.6,
    "origin": "SINTETICA"
   },
   {
    "territoryId": "jardim-das-flores",
    "indicatorId": "ocupacao",
    "dayOffset": -28,
-   "value": 59.2,
+   "value": 56.5,
    "origin": "SINTETICA"
   },
   {
    "territoryId": "jardim-das-flores",
    "indicatorId": "ocupacao",
    "dayOffset": -27,
-   "value": 58.0,
+   "value": 55.6,
    "origin": "SINTETICA"
   },
   {
    "territoryId": "jardim-das-flores",
    "indicatorId": "ocupacao",
    "dayOffset": -26,
-   "value": 57.1,
+   "value": 55.0,
    "origin": "SINTETICA"
   },
   {
    "territoryId": "jardim-das-flores",
    "indicatorId": "ocupacao",
    "dayOffset": -25,
-   "value": 63.2,
+   "value": 61.4,
    "origin": "SINTETICA"
   },
   {
    "territoryId": "jardim-das-flores",
    "indicatorId": "ocupacao",
    "dayOffset": -24,
-   "value": 63.0,
+   "value": 61.5,
    "origin": "SINTETICA"
   },
   {
    "territoryId": "jardim-das-flores",
    "indicatorId": "ocupacao",
    "dayOffset": -22,
-   "value": 63.2,
+   "value": 62.3,
    "origin": "SINTETICA"
   },
   {
    "territoryId": "jardim-das-flores",
    "indicatorId": "ocupacao",
    "dayOffset": -21,
-   "value": 63.6,
+   "value": 63.0,
    "origin": "SINTETICA"
   },
   {
    "territoryId": "jardim-das-flores",
    "indicatorId": "ocupacao",
    "dayOffset": -20,
-   "value": 66.6,
+   "value": 66.3,
    "origin": "SINTETICA"
   },
   {
@@ -163,126 +163,126 @@
    "territoryId": "jardim-das-flores",
    "indicatorId": "ocupacao",
    "dayOffset": -18,
-   "value": 67.8,
+   "value": 68.1,
    "origin": "SINTETICA"
   },
   {
    "territoryId": "jardim-das-flores",
    "indicatorId": "ocupacao",
    "dayOffset": -17,
-   "value": 70.4,
+   "value": 71.0,
    "origin": "SINTETICA"
   },
   {
    "territoryId": "jardim-das-flores",
    "indicatorId": "ocupacao",
    "dayOffset": -16,
-   "value": 71.1,
+   "value": 72.0,
    "origin": "SINTETICA"
   },
   {
    "territoryId": "jardim-das-flores",
    "indicatorId": "ocupacao",
    "dayOffset": -15,
-   "value": 71.8,
+   "value": 73.0,
    "origin": "SINTETICA"
   },
   {
    "territoryId": "jardim-das-flores",
    "indicatorId": "ocupacao",
    "dayOffset": -14,
-   "value": 73.4,
+   "value": 74.9,
    "origin": "SINTETICA"
   },
   {
    "territoryId": "jardim-das-flores",
    "indicatorId": "ocupacao",
    "dayOffset": -13,
-   "value": 70.2,
+   "value": 72.0,
    "origin": "SINTETICA"
   },
   {
    "territoryId": "jardim-das-flores",
    "indicatorId": "ocupacao",
    "dayOffset": -12,
-   "value": 72.3,
+   "value": 74.4,
    "origin": "SINTETICA"
   },
   {
    "territoryId": "jardim-das-flores",
    "indicatorId": "ocupacao",
    "dayOffset": -11,
-   "value": 76.9,
+   "value": 79.3,
    "origin": "SINTETICA"
   },
   {
    "territoryId": "jardim-das-flores",
    "indicatorId": "ocupacao",
    "dayOffset": -10,
-   "value": 77.7,
+   "value": 80.4,
    "origin": "SINTETICA"
   },
   {
    "territoryId": "jardim-das-flores",
    "indicatorId": "ocupacao",
    "dayOffset": -9,
-   "value": 75.0,
+   "value": 78.0,
    "origin": "SINTETICA"
   },
   {
    "territoryId": "jardim-das-flores",
    "indicatorId": "ocupacao",
    "dayOffset": -7,
-   "value": 78.7,
+   "value": 82.3,
    "origin": "SINTETICA"
   },
   {
    "territoryId": "jardim-das-flores",
    "indicatorId": "ocupacao",
    "dayOffset": -6,
-   "value": 80.6,
-   "origin": "SINTETICA"
-  },
-  {
-   "territoryId": "jardim-das-flores",
-   "indicatorId": "ocupacao",
-   "dayOffset": -5,
-   "value": 80.3,
-   "origin": "SINTETICA"
-  },
-  {
-   "territoryId": "jardim-das-flores",
-   "indicatorId": "ocupacao",
-   "dayOffset": -4,
    "value": 84.5,
    "origin": "SINTETICA"
   },
   {
    "territoryId": "jardim-das-flores",
    "indicatorId": "ocupacao",
+   "dayOffset": -5,
+   "value": 84.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "ocupacao",
+   "dayOffset": -4,
+   "value": 89.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "ocupacao",
    "dayOffset": -3,
-   "value": 83.1,
+   "value": 87.9,
    "origin": "SINTETICA"
   },
   {
    "territoryId": "jardim-das-flores",
    "indicatorId": "ocupacao",
    "dayOffset": -2,
-   "value": 85.2,
+   "value": 90.3,
    "origin": "SINTETICA"
   },
   {
    "territoryId": "jardim-das-flores",
    "indicatorId": "ocupacao",
    "dayOffset": -1,
-   "value": 83.7,
+   "value": 89.1,
    "origin": "SINTETICA"
   },
   {
    "territoryId": "jardim-das-flores",
    "indicatorId": "ocupacao",
    "dayOffset": 0,
-   "value": 84.8,
+   "value": 90.5,
    "origin": "SINTETICA"
   },
   {
@@ -317,175 +317,175 @@
    "territoryId": "jardim-das-flores",
    "indicatorId": "denuncias",
    "dayOffset": -25,
-   "value": 4.2,
+   "value": 4.1,
    "origin": "SINTETICA"
   },
   {
    "territoryId": "jardim-das-flores",
    "indicatorId": "denuncias",
    "dayOffset": -24,
-   "value": 3.7,
+   "value": 3.6,
    "origin": "SINTETICA"
   },
   {
    "territoryId": "jardim-das-flores",
    "indicatorId": "denuncias",
    "dayOffset": -23,
-   "value": 5.3,
-   "origin": "SINTETICA"
-  },
-  {
-   "territoryId": "jardim-das-flores",
-   "indicatorId": "denuncias",
-   "dayOffset": -22,
-   "value": 3.3,
-   "origin": "SINTETICA"
-  },
-  {
-   "territoryId": "jardim-das-flores",
-   "indicatorId": "denuncias",
-   "dayOffset": -21,
-   "value": 2.6,
-   "origin": "SINTETICA"
-  },
-  {
-   "territoryId": "jardim-das-flores",
-   "indicatorId": "denuncias",
-   "dayOffset": -20,
-   "value": 5.2,
-   "origin": "SINTETICA"
-  },
-  {
-   "territoryId": "jardim-das-flores",
-   "indicatorId": "denuncias",
-   "dayOffset": -19,
-   "value": 4.2,
-   "origin": "SINTETICA"
-  },
-  {
-   "territoryId": "jardim-das-flores",
-   "indicatorId": "denuncias",
-   "dayOffset": -18,
-   "value": 5.3,
-   "origin": "SINTETICA"
-  },
-  {
-   "territoryId": "jardim-das-flores",
-   "indicatorId": "denuncias",
-   "dayOffset": -17,
    "value": 5.1,
    "origin": "SINTETICA"
   },
   {
    "territoryId": "jardim-das-flores",
    "indicatorId": "denuncias",
+   "dayOffset": -22,
+   "value": 3.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -21,
+   "value": 2.4,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -20,
+   "value": 5.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -19,
+   "value": 4.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -18,
+   "value": 5.1,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -17,
+   "value": 4.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
    "dayOffset": -16,
-   "value": 4.1,
+   "value": 3.8,
    "origin": "SINTETICA"
   },
   {
    "territoryId": "jardim-das-flores",
    "indicatorId": "denuncias",
    "dayOffset": -15,
-   "value": 4.3,
-   "origin": "SINTETICA"
-  },
-  {
-   "territoryId": "jardim-das-flores",
-   "indicatorId": "denuncias",
-   "dayOffset": -13,
-   "value": 4.9,
-   "origin": "SINTETICA"
-  },
-  {
-   "territoryId": "jardim-das-flores",
-   "indicatorId": "denuncias",
-   "dayOffset": -12,
-   "value": 5.3,
-   "origin": "SINTETICA"
-  },
-  {
-   "territoryId": "jardim-das-flores",
-   "indicatorId": "denuncias",
-   "dayOffset": -11,
-   "value": 4.4,
-   "origin": "SINTETICA"
-  },
-  {
-   "territoryId": "jardim-das-flores",
-   "indicatorId": "denuncias",
-   "dayOffset": -10,
-   "value": 6.3,
-   "origin": "SINTETICA"
-  },
-  {
-   "territoryId": "jardim-das-flores",
-   "indicatorId": "denuncias",
-   "dayOffset": -9,
-   "value": 5.4,
-   "origin": "SINTETICA"
-  },
-  {
-   "territoryId": "jardim-das-flores",
-   "indicatorId": "denuncias",
-   "dayOffset": -8,
-   "value": 6.8,
-   "origin": "SINTETICA"
-  },
-  {
-   "territoryId": "jardim-das-flores",
-   "indicatorId": "denuncias",
-   "dayOffset": -7,
-   "value": 5.7,
-   "origin": "SINTETICA"
-  },
-  {
-   "territoryId": "jardim-das-flores",
-   "indicatorId": "denuncias",
-   "dayOffset": -6,
-   "value": 5.6,
-   "origin": "SINTETICA"
-  },
-  {
-   "territoryId": "jardim-das-flores",
-   "indicatorId": "denuncias",
-   "dayOffset": -5,
-   "value": 7.0,
-   "origin": "SINTETICA"
-  },
-  {
-   "territoryId": "jardim-das-flores",
-   "indicatorId": "denuncias",
-   "dayOffset": -4,
    "value": 4.1,
    "origin": "SINTETICA"
   },
   {
    "territoryId": "jardim-das-flores",
    "indicatorId": "denuncias",
-   "dayOffset": -3,
-   "value": 6.7,
+   "dayOffset": -13,
+   "value": 4.6,
    "origin": "SINTETICA"
   },
   {
    "territoryId": "jardim-das-flores",
    "indicatorId": "denuncias",
-   "dayOffset": -2,
-   "value": 5.7,
+   "dayOffset": -12,
+   "value": 4.9,
    "origin": "SINTETICA"
   },
   {
    "territoryId": "jardim-das-flores",
    "indicatorId": "denuncias",
-   "dayOffset": -1,
+   "dayOffset": -11,
+   "value": 4.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -10,
+   "value": 5.9,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -9,
+   "value": 5.0,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -8,
    "value": 6.4,
    "origin": "SINTETICA"
   },
   {
    "territoryId": "jardim-das-flores",
    "indicatorId": "denuncias",
+   "dayOffset": -7,
+   "value": 5.3,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -6,
+   "value": 5.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -5,
+   "value": 6.5,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -4,
+   "value": 3.6,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -3,
+   "value": 6.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -2,
+   "value": 5.2,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
+   "dayOffset": -1,
+   "value": 5.8,
+   "origin": "SINTETICA"
+  },
+  {
+   "territoryId": "jardim-das-flores",
+   "indicatorId": "denuncias",
    "dayOffset": 0,
-   "value": 6.1,
+   "value": 5.6,
    "origin": "SINTETICA"
   },
   {

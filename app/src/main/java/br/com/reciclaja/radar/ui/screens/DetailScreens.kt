@@ -47,6 +47,7 @@ import br.com.reciclaja.radar.ui.components.StateKind
 import br.com.reciclaja.radar.ui.components.StateView
 import br.com.reciclaja.radar.ui.components.TrendChart
 import br.com.reciclaja.radar.ui.fmt
+import br.com.reciclaja.radar.ui.unavailableLabel
 import br.com.reciclaja.radar.ui.relativeAge
 import br.com.reciclaja.radar.ui.theme.Spacing
 
@@ -85,6 +86,7 @@ fun IndicatorDetailScreen(vm: DetailViewModel, padding: PaddingValues, onAlert: 
                     unit = st.indicator.unit,
                     variationPct = st.weeklyVariationPct,
                     level = alert?.level,
+                    unavailable = st.evaluation.unavailableLabel(),
                 )
             }
             item { Text(st.indicator.description, style = MaterialTheme.typography.bodyMedium) }

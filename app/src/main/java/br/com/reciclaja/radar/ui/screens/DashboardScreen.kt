@@ -45,6 +45,7 @@ import br.com.reciclaja.radar.ui.components.StateView
 import br.com.reciclaja.radar.ui.components.TerritorySelector
 import br.com.reciclaja.radar.ui.components.TrendChart
 import br.com.reciclaja.radar.ui.fmt
+import br.com.reciclaja.radar.ui.unavailableLabel
 import br.com.reciclaja.radar.ui.relativeAge
 import br.com.reciclaja.radar.ui.theme.LocalStatusColors
 import br.com.reciclaja.radar.ui.theme.Spacing
@@ -137,6 +138,7 @@ private fun LazyGridScope.overviewContent(
             unit = st.indicator.unit,
             variationPct = st.weeklyVariationPct,
             level = level,
+            unavailable = st.evaluation.unavailableLabel(),
             onClick = { onIndicator(ov.territory.id, st.indicator.id) },
         )
     }

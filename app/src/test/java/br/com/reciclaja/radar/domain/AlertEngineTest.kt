@@ -72,4 +72,12 @@ class AlertEngineTest {
         assertEquals(2.0, t.slopePerDay, 1e-9)
         assertEquals(1.0, t.r2, 1e-9)
     }
+
+    @Test fun `baixa confianca rebaixa alerta para informativo`() {
+        // série ruidosa sem tendência clara, mas acima do limiar crítico em alguns dias
+        val noisy = series(14, 0.0, 0.0).mapIndexed { i, r -> r.copy(value = if (i % 2 == 0) 60.0 else 100.0) }
+        val e = engine.evaluate(ocupacao, noisy, now) as Evaluation.Raised
+        assertEquals(AlertLevel.INFORMATIVO, e.alert.level)
+        assertTrue(e.alert.justification.variables.any { it.first == "Rebaixado" })
+    }
 }

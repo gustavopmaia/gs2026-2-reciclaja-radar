@@ -24,6 +24,7 @@ class AlertEngine(
     private val minReadings: Int = 7,
     private val maxAgeDays: Int = 2,
     private val horizonDays: Int = 3,
+    private val minConfidence: Double = 0.4,
 ) {
     data class Trend(val slopePerDay: Double, val intercept: Double, val r2: Double)
 
@@ -44,12 +45,15 @@ class AlertEngine(
         val confidence = (max(0.0, trend.r2) * completeness).coerceIn(0.0, 1.0)
 
         val reference = max(forecast, ma7)
-        val level = when {
+        val rawLevel = when {
             reference >= indicator.criticalThreshold -> AlertLevel.CRITICO
             reference >= indicator.attentionThreshold -> AlertLevel.ATENCAO
             trend.slopePerDay > 0 && reference >= indicator.attentionThreshold * 0.9 -> AlertLevel.INFORMATIVO
             else -> return Evaluation.Normal
         }
+        // Incerteza alta nunca vira Atenção/Crítico: rebaixa para Informativo (reduz falso positivo).
+        val lowConfidence = confidence < minConfidence
+        val level = if (lowConfidence) AlertLevel.INFORMATIVO else rawLevel
 
         val weeklyChangePct = if (ma7 > 0) trend.slopePerDay * 7 / ma7 * 100 else 0.0
         val pctOfCritical = forecast / indicator.criticalThreshold * 100
@@ -62,10 +66,12 @@ class AlertEngine(
                 "Limiares (atenção / crítico)" to "${fmt(indicator.attentionThreshold)} / ${fmt(indicator.criticalThreshold)} $u",
                 "Leituras na janela" to "${window.size} de $windowDays dias",
                 "Ajuste da tendência (R²)" to fmt(trend.r2, 2),
-            ) + extraContext,
+            ) + (if (lowConfidence) listOf("Rebaixado" to "${rawLevel.label} → Informativo: confiança ${fmt(confidence * 100, 0)}% < ${fmt(minConfidence * 100, 0)}%") else emptyList()) +
+                extraContext,
             rule = "Nível = maior valor entre previsão linear em $horizonDays dias e média móvel de 7 dias, comparado aos limiares do indicador. " +
                 "Crítico ≥ ${fmt(indicator.criticalThreshold)}; Atenção ≥ ${fmt(indicator.attentionThreshold)}; " +
-                "Informativo ≥ 90% do limiar de atenção com tendência de alta.",
+                "Informativo ≥ 90% do limiar de atenção com tendência de alta. " +
+                "Confiança abaixo de ${fmt(minConfidence * 100, 0)}% rebaixa o alerta para Informativo.",
             periodStart = window.first().timestamp,
             periodEnd = last,
             source = window.map { it.origin.label }.distinct().joinToString() .let { "Base $it" },

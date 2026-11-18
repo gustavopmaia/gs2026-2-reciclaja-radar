@@ -39,7 +39,7 @@ INDICADORES = [
 
 # perfil por território: (base, inclinação por dia, ruído) para cada indicador
 PERFIS = {
-    "jardim-das-flores": {"ocupacao": (58, 0.95, 2.0), "denuncias": (3, 0.12, 0.8), "coleta": (14, 0.10, 0.7), "chuva": (8, 0.9, 3.0)},
+    "jardim-das-flores": {"ocupacao": (55, 1.25, 2.0), "denuncias": (3, 0.10, 0.8), "coleta": (14, 0.10, 0.7), "chuva": (8, 0.9, 3.0)},
     "vila-esperanca":    {"ocupacao": (66, 0.30, 2.0), "denuncias": (4, 0.05, 0.8), "coleta": (15, 0.02, 0.7), "chuva": (6, 0.3, 3.0)},
     "centro":            {"ocupacao": (48, 0.05, 2.5), "denuncias": (2, 0.00, 0.6), "coleta": (12, 0.00, 0.6), "chuva": (5, 0.0, 2.5)},
     "sitio-boa-vista":   {"ocupacao": (55, 0.20, 2.0), "denuncias": (1, 0.00, 0.4), "coleta": (4, 0.00, 0.4), "chuva": (7, 0.0, 3.0)},

@@ -1,10 +1,10 @@
 package br.com.reciclaja.radar.ui.components
 
 import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.horizontalScroll
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.ExperimentalLayoutApi
-import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -58,9 +58,10 @@ fun levelIcon(level: AlertLevel?): ImageVector = when (level) {
 
 /** Ícone + rótulo: a cor nunca comunica o nível sozinha. */
 @Composable
-fun LevelBadge(level: AlertLevel?, modifier: Modifier = Modifier) {
-    val color = LocalStatusColors.current.of(level)
-    val label = level?.label ?: "Normal"
+fun LevelBadge(level: AlertLevel?, modifier: Modifier = Modifier, unavailable: String? = null) {
+    // unavailable != null: sem avaliação (dados velhos/insuficientes) — nunca exibir "Normal" nesse caso.
+    val color = if (unavailable != null) LocalStatusColors.current.muted else LocalStatusColors.current.of(level)
+    val label = unavailable ?: level?.label ?: "Normal"
     Surface(
         modifier = modifier.semantics(mergeDescendants = true) { contentDescription = "Nível $label" },
         shape = MaterialTheme.shapes.small,
@@ -68,7 +69,7 @@ fun LevelBadge(level: AlertLevel?, modifier: Modifier = Modifier) {
         border = BorderStroke(1.5.dp, color),
     ) {
         Row(Modifier.padding(horizontal = Spacing.sm, vertical = Spacing.xs), verticalAlignment = Alignment.CenterVertically) {
-            Icon(levelIcon(level), contentDescription = null, tint = color, modifier = Modifier.size(16.dp))
+            Icon(if (unavailable != null) Icons.Filled.Info else levelIcon(level), contentDescription = null, tint = color, modifier = Modifier.size(16.dp))
             Spacer(Modifier.width(Spacing.xs))
             Text(label, style = MaterialTheme.typography.labelMedium, color = color, fontWeight = FontWeight.Bold)
         }
@@ -105,10 +106,11 @@ fun KpiCard(
     variationPct: Double?,
     level: AlertLevel?,
     modifier: Modifier = Modifier,
+    unavailable: String? = null,
     onClick: (() -> Unit)? = null,
 ) {
     val trend = variationPct?.let { (if (it >= 0) "▲ +" else "▼ ") + "${it.fmt()}% em 7 dias" } ?: "sem comparação semanal"
-    val description = "$title: $value $unit, $trend, nível ${level?.label ?: "normal"}"
+    val description = "$title: $value $unit, $trend, ${unavailable ?: "nível " + (level?.label ?: "normal")}"
     val content: @Composable () -> Unit = {
         Column(Modifier.padding(Spacing.md).fillMaxWidth()) {
             Text(title, style = MaterialTheme.typography.titleSmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
@@ -119,7 +121,7 @@ fun KpiCard(
             }
             Text(trend, style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
             Spacer(Modifier.padding(top = Spacing.sm))
-            LevelBadge(level)
+            LevelBadge(level, unavailable = unavailable)
         }
     }
     val m = modifier
@@ -145,8 +147,6 @@ fun AlertCard(alert: Alert, modifier: Modifier = Modifier, subtitle: String? = n
         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
     ) {
         Row(Modifier.padding(Spacing.md), verticalAlignment = Alignment.Top) {
-            Icon(levelIcon(alert.level), contentDescription = null, tint = color, modifier = Modifier.size(28.dp))
-            Spacer(Modifier.width(Spacing.md))
             Column(Modifier.weight(1f)) {
                 LevelBadge(alert.level)
                 Spacer(Modifier.padding(top = Spacing.xs))
@@ -192,10 +192,10 @@ fun LabeledText(label: String, text: String) {
     }
 }
 
-@OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun TerritorySelector(territories: List<Territory>, selectedId: String?, onSelect: (String) -> Unit, modifier: Modifier = Modifier) {
-    FlowRow(modifier = modifier, horizontalArrangement = Arrangement.spacedBy(Spacing.sm)) {
+    // Rolagem horizontal: cabe em qualquer largura sem empurrar o conteúdo para baixo.
+    Row(modifier = modifier.fillMaxWidth().horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(Spacing.sm)) {
         territories.forEach { t ->
             val selected = t.id == selectedId
             FilterChip(
