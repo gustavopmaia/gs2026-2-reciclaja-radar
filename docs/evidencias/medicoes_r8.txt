@@ -1,0 +1,57 @@
+Ambiente: emulador Pixel 6 (AVD radar_api35, Android 15/API 35, arm64, GPU swiftshader) em MacBook Apple Silicon. Data: 18/11/2026 14:52
+
+== Tamanho do APK release
+sem R8 (isMinifyEnabled=false): 8433806 bytes
+com R8 + shrinkResources:       1563095 bytes
+
+== Memória (TOTAL PSS com o Painel aberto) — tools/medir_memoria.sh
+-- sem R8
+execução 1: 53985 KB
+execução 2: 47826 KB
+execução 3: 47470 KB
+execução 4: 47477 KB
+execução 5: 47811 KB
+mediana: 47811 KB (n=5)
+-- com R8
+execução 1: 33260 KB
+execução 2: 31548 KB
+execução 3: 31410 KB
+execução 4: 32838 KB
+execução 5: 32788 KB
+mediana: 32788 KB (n=5)
+
+== Cold start (TotalTime, am start -W) — tools/medir_cold_start.sh, após compile speed-profile
+-- sem R8
+execução 1: 268 ms
+execução 2: 300 ms
+execução 3: 366 ms
+execução 4: 239 ms
+execução 5: 286 ms
+execução 6: 320 ms
+execução 7: 275 ms
+execução 8: 260 ms
+execução 9: 366 ms
+execução 10: 309 ms
+execução 11: 258 ms
+execução 12: 253 ms
+execução 13: 279 ms
+execução 14: 275 ms
+execução 15: 320 ms
+mediana: 279 ms (n=15)
+-- com R8
+execução 1: 273 ms
+execução 2: 406 ms
+execução 3: 558 ms
+execução 4: 323 ms
+execução 5: 330 ms
+execução 6: 269 ms
+execução 7: 231 ms
+execução 8: 271 ms
+execução 9: 334 ms
+execução 10: 285 ms
+execução 11: 588 ms
+execução 12: 430 ms
+execução 13: 569 ms
+execução 14: 446 ms
+execução 15: 713 ms
+mediana: 334 ms (n=15)
