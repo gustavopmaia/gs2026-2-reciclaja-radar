@@ -1,0 +1,5 @@
+<resources>
+    <style name="Theme.Radar" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">#FFF7FAF6</item>
+    </style>
+</resources>
