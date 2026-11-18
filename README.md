@@ -26,6 +26,8 @@ Turma **2CCPY** · Grupo **ReciclaJá**
 | APK instalável | [`entregas/ReciclaJaRadar-1.0.0-release.apk`](entregas/) (minSdk 26 · targetSdk 36). Também sai como artefato de cada execução do CI |
 | Vídeo (≤ 3 min) | ver `docs/VIDEO_URL.txt` |
 | Evidências de qualidade | [`docs/evidencias/`](docs/evidencias) |
+| Print do CI verde (execução real) | [`docs/evidencias/ci_run_verde.png`](docs/evidencias/ci_run_verde.png) · [run #3](https://github.com/gustavopmaia/gs2026-2-reciclaja-radar/actions/runs/44368111896) |
+| Roteiro do vídeo e cola de defesa | [`docs/ROTEIRO_VIDEO.md`](docs/ROTEIRO_VIDEO.md) · [`docs/DEFESA_CHEATSHEET.md`](docs/DEFESA_CHEATSHEET.md) |
 | Diagramas | [`docs/diagramas/`](docs/diagramas) (contexto, camadas, sequência do cenário crítico) |
 | Dados sintéticos | [`tools/gerar_dados_sinteticos.py`](tools/gerar_dados_sinteticos.py) → [`app/src/main/assets/seed.json`](app/src/main/assets/seed.json) (CC0, fictícios) |
 
